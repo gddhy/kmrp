@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1%p"
+    android:keyWidth="13.3%p"
+    android:keyHeight="50dp"
+    android:verticalGap="1%p">
+
+    <Row>
+        <Key
+            android:codes="17"
+            android:keyLabel="左软"/>
+        <Key
+            android:codes="1"
+            android:keyLabel="1" />
+        <Key
+            android:codes="12"
+            android:keyLabel="↑" />
+        <Key
+            android:codes="3"
+            android:keyLabel="3" />
+        <Key
+            android:codes="18"
+            android:keyLabel="右软" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="5"
+            android:keyLabel="5" />
+        <Key
+            android:codes="14"
+            android:keyLabel="←"/>
+        <Key
+            android:codes="20"
+            android:keyLabel="ok" />
+        <Key
+            android:codes="15"
+            android:keyLabel="→" />
+        <Key
+            android:codes="0"
+            android:keyLabel="0" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="10"
+            android:keyLabel="*" />
+        <Key
+            android:codes="7"
+            android:keyLabel="7" />
+        <Key
+            android:codes="13"
+            android:keyLabel="↓" />
+        <Key
+            android:codes="9"
+            android:keyLabel="9" />
+        <Key
+            android:codes="11"
+            android:keyLabel="#" />
+    </Row>
+    
+    <Row>
+		<Key
+			android:keyEdgeFlags="left"
+			android:horizontalGap="15.5%p"
+            android:codes="-3"
+            android:keyLabel="高度" />
+		<Key
+            android:codes="-1"
+            android:keyLabel="切换" />
+		<Key
+            android:codes="-2"
+            android:keyLabel="退出" />
+    </Row>
+
+</Keyboard>

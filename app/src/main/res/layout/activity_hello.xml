@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<LinearLayout
+		android:paddingStart="20dp"
+		android:paddingEnd="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:padding="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Mrp模拟器"
+			android:gravity="center"
+			android:textSize="28sp"/>
+		
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Mrp模拟器，是安卓上运行杭州斯凯网络mrp程序的工具"/>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="隐私相关："/>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="储存空间权限：软件需要储存空间权限用于读取mrp程序，保存mrp运行中的数据"/>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="* 当前页面仅首次启动展示"/>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		
+		<CheckBox
+			android:onClick="onClickCheckBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="启用虚拟键盘" />
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="进入软件" 
+			android:onClick="onOpenMain" />
+
+	</LinearLayout>
+
+</ScrollView>
+

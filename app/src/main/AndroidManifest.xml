@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.yzjlb.sai.kmrp">
+	
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!--振动-->
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+	<application
+		android:name="net.gddhy.openmrp.MyApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme"
+		android:resizeableActivity="false">
+		
+		<activity
+			android:name="net.gddhy.openmrp.HelloActivity">
+				
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+		
+		<activity
+			android:launchMode="singleTop"
+			android:enabled="false"
+            android:name="person.wangchen11.nativeview.MainActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+       <activity
+		   android:documentLaunchMode="intoExisting"
+		   android:excludeFromRecents="true"
+		   android:maxRecents="3"
+		   
+			android:theme="@android:style/Theme.NoDisplay"
+            android:name="net.gddhy.openmrp.MainActivity"
+            android:label="@string/app_name" >
+			<intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="*" />
+                <data
+                    android:scheme="file" />
+                <data
+                    android:scheme="content" />
+                <data
+                    android:pathPattern=".*\\.mrp" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="*/*" />
+                <data
+                    android:host="*" />
+                <data
+                    android:scheme="file" />
+                <data
+                    android:scheme="content" />
+                <data
+                    android:pathPattern=".*\\.mrp" />
+                <data
+                    android:pathPattern=".*\\.MRP" />
+            </intent-filter>
+			
+		   <intent-filter>
+			   <action
+				   android:name="android.intent.action.VIEW" />
+			   <category
+				   android:name="android.intent.category.DEFAULT" />
+			   <category
+				   android:name="android.intent.category.BROWSABLE" />
+			   <data
+				   android:mimeType="*/*"
+				   android:host="*" />
+			   <data
+				   android:scheme="file" />
+			   <data
+				   android:scheme="content" />
+			   <data
+				   android:pathPattern=".*.mrp" />
+			   <data
+				   android:pathPattern=".*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.mrp" />
+		   </intent-filter>
+
+		   <intent-filter>
+			   <action
+				   android:name="android.intent.action.VIEW" />
+			   <category
+				   android:name="android.intent.category.DEFAULT" />
+			   <category
+				   android:name="android.intent.category.BROWSABLE" />
+			   <data
+				   android:mimeType="*/*"
+				   android:host="*" />
+			   <data
+				   android:scheme="file" />
+			   <data
+				   android:scheme="content" />
+			   <data
+				   android:pathPattern=".*.MRP" />
+			   <data
+				   android:pathPattern=".*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+			   <data
+				   android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.MRP" />
+		   </intent-filter>
+		   
+        </activity>
+	</application>
+
+</manifest>

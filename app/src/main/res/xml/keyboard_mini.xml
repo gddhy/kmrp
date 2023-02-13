@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1%p"
+    android:keyWidth="13.3%p"
+    android:keyHeight="50dp"
+    android:verticalGap="1%p">
+
+    <Row>
+        <Key
+            android:codes="17"
+            android:keyLabel="左软"/>
+        <Key
+            android:codes="12"
+            android:keyLabel="↑" />
+        <Key
+            android:codes="18"
+            android:keyLabel="右软" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="14"
+            android:keyLabel="←"/>
+        <Key
+            android:codes="20"
+            android:keyLabel="ok" />
+        <Key
+            android:codes="15"
+            android:keyLabel="→" />
+    </Row>
+
+    <Row>
+		<Key
+            android:codes="-1"
+            android:keyLabel="切换" />
+        <Key
+            android:codes="13"
+            android:keyLabel="↓" />
+		<Key
+            android:codes="-2"
+            android:keyLabel="退出" />
+    </Row>
+
+</Keyboard>
